@@ -1,0 +1,53 @@
+{
+  "name": "eslint-config-caixiejs-base",
+  "version": "0.1.0",
+  "description": "CaixieJS's base eslint config presets with prettier",
+  "author": {
+    "name": "Baisheng",
+    "email": "baisheng@gmail.com",
+    "url": "https://giithub.com/baisheng"
+  },
+  "license": "MIT",
+  "homepage": "https://giithub.com/caixie-team/eslint-config-caixiejs",
+  "repository": {
+    "url": "https://giithub.com/caixie-team/eslint-config-caixiejs.git"
+  },
+  "bugs": {
+    "url": "https://giithub.com/caixie-team/eslint-config-caixiejs/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./base": "./base.js",
+    "./prettier": "./prettier.js",
+    "./rules": "./rules/index.js"
+  },
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "dependencies": {
+    "@html-eslint/parser": "^0.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsonc": "^2.5.0",
+    "eslint-plugin-md": "^1.0.19",
+    "eslint-plugin-n": "^15.4.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-yml": "^1.2.0",
+    "markdown-eslint-parser": "^1.2.1",
+    "prettier": "^2.7.1",
+    "yaml-eslint-parser": "^1.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0"
+  }
+}

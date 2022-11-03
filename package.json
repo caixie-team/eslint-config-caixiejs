@@ -1,0 +1,47 @@
+{
+  "name": "eslint-config-caixiejs-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CaixieJS's eslint config presets with prettier",
+  "author": {
+    "name": "Baisheng",
+    "email": "baisheng@gmail.com",
+    "url": "https://github.com/baisheng"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/caixie-team/eslint-config-caixiejs",
+  "repository": {
+    "url": "https://github.com/caixie-team/eslint-config-caixiejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caixie-team/eslint-config-caixiejs/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "commit": "caixie git-commit",
+    "esno": "esno",
+    "cleanup": "esno ./scripts/cleanup.ts",
+    "update-pkg": "ncu --deep -u",
+    "update-version": "bumpp package.json packages/*/package.json",
+    "publish-pkg": "pnpm -r publish --access public",
+    "release": "pnpm update-version && pnpm publish-pkg",
+    "sync-pkg": "esno ./scripts/sync.ts",
+    "prepare": "pnpm -r run stub && husky install"
+  },
+  "devDependencies": {
+    "@caixiejs/cli": "^0.1.0",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.26.0",
+    "eslint-config-caixiejs": "workspace:*",
+    "esno": "^0.16.3",
+    "husky": "^8.0.1",
+    "npm-check-updates": "^16.3.16",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.3.0",
+    "typescript": "^4.8.4",
+    "zx": "^7.1.1"
+  }
+}

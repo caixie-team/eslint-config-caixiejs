@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-caixiejs-ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CaixieJS's TypeScript eslint config presets with prettier",
   "author": {
     "name": "Baisheng",
